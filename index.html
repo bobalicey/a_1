@@ -1,19 +1,16 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>我的第一个网页</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黄金矿工 · Gold Rush</title>
+<link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
 <body>
-  <main class="card">
-    <p class="eyebrow">HELLO, WEB</p>
-    <h1>从这里，开始创造。</h1>
-    <p class="description">这是一个由 HTML、CSS 和 JavaScript 构建的基础网页。编辑代码，让它成为你的作品。</p>
-    <button id="greeting-button" type="button">打个招呼</button>
-    <p id="greeting" class="greeting" role="status" aria-live="polite">准备好开始了吗？</p>
-  </main>
-</body>
-</html>
+<main>
+<header><div><p class="eyebrow">THE LITTLE GOLD RUSH</p><h1>黄金矿工 <span>⛏</span></h1></div><button id="restart" class="secondary">重新开始</button></header>
+<section class="stats" aria-label="游戏状态"><div>关卡<strong id="level">1</strong></div><div>金币<strong id="score">0</strong></div><div>目标<strong id="target">650</strong></div><div>剩余时间<strong id="time">60s</strong></div></section>
+<div class="stage"><canvas id="game" width="960" height="600" aria-label="黄金矿工游戏：按空格或点击出钩抓取矿物"></canvas><div id="overlay" class="overlay"><div class="panel"><p id="badge" class="eyebrow">准备开采</p><h2 id="title">地下藏着你的好运。</h2><p id="message">瞄准黄金和钻石，避开笨重的石头。60 秒内达到目标即可进入下一关。</p><button id="start">开始游戏 →</button></div></div></div>
+<footer><p><b>空格 / ↓ / 点击画面</b> 出钩 · 黄金越大，拉回越慢 · 💎 钻石价值最高</p><button id="grab">出钩 ↓</button></footer>
+<p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+</main>
+</body></html>
